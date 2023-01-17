@@ -27,5 +27,5 @@ From the image above:
  * My contract obviously did nothing with it because I didn't add any logic.
  * My contract returned the borrowed DAI (plus interest) back to AAVE. **_.05_** DAI attached to the amount my contract is sending back is the interest I paid for the loan. So before calling the `requestFlashloan` method, ensure there is enough funds in your contract to pay for the interest.
  
- **Check the `arbitrage` branch of this repo to see a mini example on flash loans can be used to perform arbitrage on two DEXes with token price differences **
+ **Check the `arbitrage` branch of this repo to see a mini example on flash loans can be used to perform arbitrage on two DEXes with token price differences**
 
