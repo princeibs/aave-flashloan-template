@@ -2,7 +2,7 @@
 
 This is a template for creating a flash loan on the AAVE protocol.
 
-> **Note** **Check the `arbitrage` branch for an example of implementing arbitrage with flash loans.**
+> **Note** **Check the [`arbitrage`](https://github.com/princeibs/flashloan-template/tree/arbitrage) branch for an example of implementing arbitrage with flash loans.**
 
 All AAVE's core contracts and interfaces are already included in the template. Locate the `Flash` contract in the Flash.sol file to add your logic. 
 
@@ -27,5 +27,5 @@ From the image above:
  * My contract obviously did nothing with it because I didn't add any logic.
  * My contract returned the borrowed DAI (plus interest) back to AAVE. **_.05_** DAI attached to the amount my contract is sending back is the interest I paid for the loan. So before calling the `requestFlashloan` method, ensure there is enough funds in your contract to pay for the interest.
  
- **Check the `arbitrage` branch of this repo to see a mini example on flash loans can be used to perform arbitrage on two DEXes with token price differences**
+ **Check the [`arbitrage`](https://github.com/princeibs/flashloan-template/tree/arbitrage) branch of this repo to see a mini example on how flash loans can be used to perform arbitrage on two DEXes with token price differences**
 
